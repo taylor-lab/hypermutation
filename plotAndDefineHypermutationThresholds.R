@@ -1,6 +1,12 @@
 #written by noah friedman
 #This script contains multiple functionalities:
-"""1. the function find_and_save_all_distributions will take a file with cancer types and tmbs and for each one performs a clustering and 
+#1. the function find_and_save_all_distributions will take a file with 
+#cancer types and tmbs and for each one performs a clustering using Ckmeans.1d.dp and parameters you set
+#then it writes the results to a directory you specify if desired
+#2. the function load_and_plot_all_distributions which plots all distributions together using the function plot_distribution
+
+#note please refer to the attached ipython script for functionality for how I change classifications to highMutation burden for certain cancer types
+#please refer to the attached flow chart for a visual explanation of how this method works
 
 library(ggplot2)
 library(grid)
