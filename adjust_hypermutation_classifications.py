@@ -1,6 +1,10 @@
-#run the following script after 
+#run the following script after creating hypermutation files with the associated R file then go back to that file to plot the results
+#FOR python2
+import pandas as pd
+import os
+from collections import Counter
 
-pathPrefix = '/Users/friedman/Desktop/mnt'
+pathPrefix = '/Users/friedman/Desktop/mnt' #replace with '' if you are running this script on the cluster without a mount
 
 #validates that the hypermutation cohort identified by the clustering fulfills two additional conditions:
 #1. the majority signature in the hypermutated cases is distinct from the majority signature in the non-hypermutated cases
