@@ -9,6 +9,11 @@ pathPrefix = '/Users/friedman/Desktop/mnt' #replace with '' if you are running t
 #validates that the hypermutation cohort identified by the clustering fulfills two additional conditions:
 #1. the majority signature in the hypermutated cases is distinct from the majority signature in the non-hypermutated cases
 #2. the hypermutated cases represent <50% of the total cases
+
+###NOTE: in the file /juno/work/taylorlab/friedman/myAdjustedDataFiles/impactSignatureCalls_Nov20_2019.tsv, I combined the following signatures together:
+#6+15+20+21+26=MMR  #2+13=APOBEC  #4+24+29=SMOKING
+###NOTE: in the file /juno/work/taylorlab/friedman/myAdjustedDataFiles/impactSignatureCalls_Nov20_2019.tsv, I combined the following signatures together:
+
 def validate_hypermutation_decomposition(hypermutationFileDir = pathPrefix + '/juno/work/taylorlab/friedman/hypermutationAnalysisProj/projectDataAndConfigFiles/hypermutationStatusIds/',
                                         signaturesFilePath = pathPrefix + '/juno/work/taylorlab/friedman/myAdjustedDataFiles/impactSignatureCalls_Nov20_2019.tsv',
                                         minNormalCasesToCompare = 25 #dont change anything with the normal cases if there are fewer than this many signatures
